@@ -1,0 +1,22 @@
+<div>
+  <h3>Authenticaton: </h3>
+</div>
+
+
+<div *ngIf="!isLoggedIn">
+  <button type="button" class="btn btn-primary" (click)="login()">{{loginLogoutText}}</button>
+</div>
+
+<div *ngIf="isLoggedIn">
+  <button type="button" class="btn btn-danger" (click)="logout()">{{loginLogoutText}}</button>
+
+  <h3>Profile Info: </h3>
+  <ul>
+    <li>{{currentUser.profile.given_name }}</li>
+    <li>{{currentUser.profile.family_name }}</li>
+    <li>{{currentUser.profile.name }}</li>
+    <li>{{currentUser.profile.upn }}</li>
+    <li>{{currentUser.profile.iss }}</li>
+    <li>{{currentUser.profile.tid }}</li>
+  </ul>
+</div>

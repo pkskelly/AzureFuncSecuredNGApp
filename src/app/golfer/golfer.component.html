@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row grid-container">
+      <div class="col-md-10">
+          <div class="table">
+              <table class="table table-striped table-hover">
+                  <thead>
+                      <tr>
+                          <th>&nbsp;</th>
+                           <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Address</th>
+                          <th>City</th>
+                          <th>State</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr *ngFor="let golfer of golfers">
+                          <td><span class="glyphicon glyphicon-edit"></span></td>
+                          <td>{{ golfer.firstName }}</td>
+                          <td>{{ golfer.lastName }}</td>
+                          <td>{{ golfer.address }}</td>
+                          <td>{{ golfer.city }}</td>
+                          <td>{{ golfer.state }}</td>
+                      </tr>
+                      <tr *ngIf="!golfers">
+                          <td>&nbsp;</td>
+                          <td colspan="6">Searching...</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+</div>
