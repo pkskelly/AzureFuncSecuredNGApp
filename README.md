@@ -43,6 +43,8 @@ Be sure you have updated the CORS "Allowed Origins" in your Azure Functions' Pla
 ## Drop me a note
 If you have issues, suggestions or comments, feel free to leave a comment on my [blog](https://peteskelly.com).
 
+## Disclaimer
+THIS CODE IS PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
 
 
 [![Analytics](https://ga-beacon.appspot.com/UA-72318043-2/azfunc-ng-client/readme)](https://github.com/igrigorik/ga-beacon)
